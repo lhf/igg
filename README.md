@@ -14,9 +14,11 @@ where `g` is the Unicode character id, if positive, or the glyph id in the font,
 There is a simple client in main.c, which can be used as a template or in a pipe for further processing. To build it, `make test`.
 
 There is a [Lua](https://www.lua.org) client in fd.c, which leaves the processing to a  script.
-As a demo, ps.lua outputs PostScript disections of glyphs.
+As a demo, ps.lua outputs PostScript disections of glyphs. See the image below.
 This module can also be built as a shared library for Lua named `outline.so` with `make so`.
 
 Before building, set the locations of FreeType headers and library in Makefile. The default there assumes a link to the FreeType source tree.
 
 This code is hereby placed in the public domain and also under the MIT license.
+
+![image](out.png)
